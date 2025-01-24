@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F4D04E;
+    font-family: Figtree, sans-serif;
+}
+
+.card{
+    max-width: 384px;
+    height: 65vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #000;
+    filter: drop-shadow(8px 8px #000);
+    border-radius: 20px;
+    padding: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution {
+    font-size: 11px;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
