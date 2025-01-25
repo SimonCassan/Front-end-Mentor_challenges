@@ -1,14 +1,20 @@
 @font-face {
     font-family: 'Figtree';
-    src: url(../assets/fonts/static/Figtree-ExtraBold.ttf) format('truetype');
+    src: url(../fonts/static/Figtree-ExtraBold.ttf) format('truetype');
     font-style: normal;
     font-weight: 800;
 }
 @font-face {
     font-family: 'Figtree';
-    src: url(../assets/fonts/static/Figtree-Medium.ttf) format('truetype');
+    src: url(../fonts/static/Figtree-Medium.ttf) format('truetype');
     font-style: normal;
     font-weight: 500;
+}
+
+
+
+:root{
+    --yellow-color: #F4D04E;
 }
 
 * {
@@ -17,8 +23,10 @@
     box-sizing: border-box;
 }
 
+
+
 body{
-    background-color: #F4D04E;
+    background-color: var(--yellow-color);
     font-family: 'Figtree', sans-serif;
     line-height: 150%;
 }
@@ -29,6 +37,8 @@ main{
     align-items: center;
     justify-content: center;
 }
+
+
 
 .card{
     max-width: 385px;
@@ -59,13 +69,24 @@ main{
 
 .card__category{
     padding: 0.25rem 0.75rem;
-    background-color: #F4D04E;
+    background-color: var(--yellow-color);
     border-radius: 4px;
     width: fit-content;
 }
 
+a:link, a:visited{
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover, a:active{
+    cursor: pointer;
+    color: var(--yellow-color);
+}
+
 h1 {
     font-size: 1.5rem;
+    hyphens: auto;
 }
 
 h1, .card__category, .card__author__name{
@@ -89,10 +110,6 @@ h1, .card__category, .card__author__name{
 .card__author img{
     width: 32px;
 }
-
-
-
-
 
 
 
