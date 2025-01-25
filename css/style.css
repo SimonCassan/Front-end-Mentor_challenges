@@ -23,13 +23,16 @@ body{
     line-height: 150%;
 }
 
+main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .card{
     max-width: 385px;
-    height: 65vh;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    height: 65%;
     background-color: #fff;
     border: 1px solid #000;
     filter: drop-shadow(8px 8px #000);
@@ -39,12 +42,18 @@ body{
     flex-direction: column;
     justify-content: space-between;
     gap: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .card__main{
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
+}
+
+.card__image img{
+    max-width: 100%;
 }
 
 .card__category{
@@ -86,13 +95,14 @@ h1, .card__category, .card__author__name{
 
 
 
-
-
-.attribution {
-    font-size: 11px;
+footer{
     position: absolute;
     bottom: 1rem;
     left: 1rem;
+}
+
+.attribution {
+    font-size: 11px;
 }
 
 .attribution a {
