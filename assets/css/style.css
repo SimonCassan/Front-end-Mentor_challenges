@@ -1,0 +1,134 @@
+@font-face {
+    font-family: Outfit;
+    src: url('../fonts/outfit/static/Outfit-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Outfit;
+    src: url('../fonts/outfit/static/Outfit-SemiBold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Outfit;
+    src: url('../fonts/outfit/static/Outfit-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: YoungSerif;
+    src: url('../fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Outfit, sans-serif;
+    line-height: 150%;
+}
+
+article {
+    margin: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+h1,
+h2:not(.prep-title) {
+    font-family: YoungSerif, serif;
+    margin-bottom: 1.5rem;
+}
+
+h2:not(.prep-title) {
+    font-size: 1.75rem;
+}
+
+.prep {
+    background-color: #FFF7FB;
+    padding: 1.5rem;
+}
+
+.prep-title {
+    color: #7A284E;
+    margin-bottom: 1rem;
+}
+
+img {
+    width: 100%;
+}
+
+
+ol,
+ul {
+    margin-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+li::marker,
+h2:not(.prep-title),
+td {
+    color: #854632;
+}
+
+span {
+    font-weight: 700;
+}
+
+.border {
+    background-color: #E3DDD7;
+    width: 100%;
+    height: 1px;
+}
+
+
+li,
+p {
+    color: #5F564D;
+}
+
+th {
+    font-weight: normal;
+    text-align: left;
+    padding-left: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    display: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
