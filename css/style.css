@@ -40,9 +40,14 @@ span:first-of-type {
     font-size: 2rem;
 }
 
+h1 {
+    line-height: 2rem;
+}
+
 .subtitle {
     font-size: 0.75rem;
     text-transform: uppercase;
+    letter-spacing: 5px;
 }
 
 p,
@@ -55,6 +60,10 @@ p,
     font-size: 0.875rem;
 }
 
+p:last-of-type {
+    line-height: 1.4rem;
+}
+
 h1,
 .price span:first-of-type {
     font-family: Fraunces;
@@ -62,7 +71,7 @@ h1,
 
 .price {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     align-items: center;
 }
 
@@ -72,6 +81,7 @@ h1,
 
 .price span:last-of-type {
     text-decoration: line-through;
+    font-size: 0.8rem;
 }
 
 .btn-cart {
@@ -88,6 +98,7 @@ h1,
     align-items: center;
     justify-content: center;
     gap: 0.75rem;
+    font-weight: 700;
 }
 
 .btn-cart:hover {
