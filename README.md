@@ -22,12 +22,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./assets/images/screenshot.png)
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/)
-- Live Site URL: [GitHub Pages](https://github.com/SimonCassan/Front-end-Mentor_Four-card-feature-section)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/four-card-feature-section-with-css-grid-and-flexbox-Ak3C2kODH5)
+- Live Site URL: [GitHub Pages](https://simoncassan.github.io/Front-end-Mentor_Four-card-feature-section/)
 
 ## My process
 
