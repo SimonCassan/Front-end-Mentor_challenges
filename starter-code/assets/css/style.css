@@ -33,6 +33,26 @@ body {
     font-family: sans-serif;
 }
 
+img {
+    width: 100%;
+    display: block;
+}
+
+p,
+a:not(.footer__logo-socials a) {
+    font-family: Manrope;
+    line-height: 180%;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+p {
+    font-size: 16px;
+}
+
 h1,
 h2,
 .number {
@@ -49,7 +69,6 @@ header {
     padding: 2rem 1.25rem 0;
     text-align: center;
     position: relative;
-    overflow: hidden;
 }
 
 header .bg-hero::after {
@@ -90,13 +109,17 @@ nav a,
     width: 96px;
 }
 
-.text-hero {
+.content-hero {
+    max-width: 1120px;
+    margin: 4rem auto;
     width: 80%;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -30%);
-    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    gap: 4rem;
+}
+
+.text-hero {
+    grid-column: 2/3;
 }
 
 header h1 {
@@ -106,13 +129,7 @@ header h1 {
 }
 
 .img-hero {
-    position: absolute;
-    max-width: 600px;
-    width: 80%;
-    max-height: 30%;
-    bottom: 5%;
-    left: 50%;
-    transform: translate(-50%, -5%);
+    grid-column: 1/4;
 }
 
 
@@ -230,28 +247,8 @@ footer img {
 }
 
 .footer__logo-socials a:hover {
-    filter: sepia(100%) hue-rotate(265deg);
+    filter: hue-rotate(40deg) brightness(150%);
 }
-
-img {
-    width: 100%;
-}
-
-p,
-a:not(.footer__logo-socials a) {
-    font-family: Manrope;
-    line-height: 180%;
-}
-
-a {
-    text-decoration: none;
-    font-weight: 700;
-}
-
-p {
-    font-size: 16px;
-}
-
 
 
 @media screen and (max-height: 620px) {
@@ -274,9 +271,8 @@ p {
     }
 
     header::before {
-        left: 0;
+        left: -30px;
         top: 10%;
-        /* transform: translate(-50%, -90%); */
         content: url('../images/bg-pattern-1.svg');
     }
 
@@ -315,15 +311,11 @@ p {
     }
 
     .article__text::after {
-        content: "";
+        content: url('../images/bg-pattern-3.svg');
         position: absolute;
         right: 0;
         bottom: 0;
-        transform: translateY(65%);
-        background-image: url('../images/bg-pattern-3.svg');
-        background-repeat: no-repeat;
-        width: 212px;
-        height: 100%;
+        transform: translateY(50%);
     }
 
     section {
