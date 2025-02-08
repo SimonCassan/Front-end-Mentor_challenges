@@ -69,6 +69,9 @@ header {
     padding: 2rem 1.25rem 0;
     text-align: center;
     position: relative;
+    display: flex;
+    flex-direction: column;
+
 }
 
 header .bg-hero::after {
@@ -87,6 +90,7 @@ nav {
     display: flex;
     justify-content: space-between;
     max-width: 1120px;
+    width: 100%;
     margin: auto;
 }
 
@@ -115,12 +119,13 @@ nav a,
     width: 80%;
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
-    gap: 4rem;
+    align-items: center;
     justify-content: center;
+    flex: 1;
 }
 
 .text-hero {
-    grid-column: 2/3;
+    grid-column: 1/4;
 }
 
 header h1 {
@@ -130,7 +135,7 @@ header h1 {
 }
 
 .img-hero {
-    grid-column: 1/4;
+    grid-column: 2/3;
 }
 
 main {
