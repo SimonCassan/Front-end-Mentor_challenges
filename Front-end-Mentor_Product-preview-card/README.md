@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Frontend Mentor]()
-- Live Site URL: [GitHub Pages](https://github.com/SimonCassan/Front-end-Mentor_Product-preview-card)
+- Live Site URL: [GitHub Pages](https://simoncassan.github.io/Front-end-Mentor_challenges/Front-end-Mentor_Product-preview-card/)
 
 ## My process
 ### Built with
