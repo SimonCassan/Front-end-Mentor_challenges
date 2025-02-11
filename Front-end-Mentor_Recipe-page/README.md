@@ -19,7 +19,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 ### Links
 
 - Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-recipe-page-with-flexbox-2jWHnVqPvy)
-- Live Site URL: [GitHub Pages](https://simoncassan.github.io/Front-end-Mentor_Recipe-page/)
+- Live Site URL: [GitHub Pages](https://simoncassan.github.io/Front-end-Mentor_challenges/Front-end-Mentor_Recipe-page/)
 
 ## My process
 ### Built with
