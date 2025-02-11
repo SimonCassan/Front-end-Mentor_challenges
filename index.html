@@ -1,52 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./assets/css/style.css">
   <title>Frontend Mentor | Contact form</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <script src="./script.js" defer></script>
 </head>
+
 <body>
+  <main>
+    <section class="card-form">
+      <h1>Contact Us</h1>
+      <form action="#" method="post">
+        <div class="form-row form-name">
+          <label for="firstname">First Name <span>*</span></label>
+          <input type="text" name="firstname" id="firstname">
+          <p class="error-text">This field is required</p>
+        </div>
+        <div class="form-row form-name">
+          <label for="lastname">Last Name <span>*</span></label>
+          <input type="text" name="lastname" id="lastname">
+          <p class="error-text">This field is required</p>
+        </div>
+        <div class="form-row">
+          <label for="email">Email address <span>*</span></label>
+          <input type="email" name="email" id="email">
+          <p class="error-text">This field is required</p>
+        </div>
+        <div class="form-row form-radio">
+          <fieldset>
+            <legend>Query Type <span>*</span></legend>
+            <label class="label-radio">
+              <input type="radio" name="query-type" value="general">
+              General Enquiry
+            </label>
+            <label class="label-radio">
+              <input type="radio" name="query-type" id="support" value="Support Request">
+              Support Request
+            </label>
+            <p class="error-text">Please select a query type</p>
+          </fieldset>
+        </div>
+        <div class="form-row">
+          <label for="msg">Message <span>*</span></label>
+          <textarea name="msg" id="msg" rows="8"></textarea>
+          <p class="error-text">This field is required</p>
+        </div>
+        <div class="form-row flex-line">
+          <input type="checkbox" name="consent" id="consent">
+          <label for="consent">I consent to being contacted by the team <span>*</span></label>
+          <p class="error-text">To submit this form, please consent to being contacted</p>
+        </div>
+        <input class="form-row btn-green" type="submit" value="Submit">
+      </form>
+    </section>
 
-  Contact Us
-
-  First Name
-  This field is required
-
-  Last Name
-  This field is required
-
-  Email Address
-  Please enter a valid email address
-  This field is required
-
-  Query Type
-  General Enquiry
-  Support Request
-  Please select a query type
-
-  Message
-  This field is required
-
-  I consent to being contacted by the team
-  To submit this form, please consent to being contacted
-
-  Submit
-
-  Message Sent!
-  Thanks for completing the form. We'll be in touch soon!
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <div class="card">
+      <div><img src="./assets/images/icon-success-check.svg" alt="">
+        <h3>Message Sent!</h3>
+      </div>
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/SimonCassan">Simon Cassan</a>.
+  </footer>
 </body>
+
 </html>
