@@ -10,7 +10,8 @@ const msgError = msgField.parentElement;
 const checkBoxField = document.querySelector('#consent');
 const checkBoxError = checkBoxField.parentElement;
 const cardSuccess = document.querySelector('.card');
-
+const radioFields = document.querySelectorAll("input[type='radio'");
+const radioFieldError = document.querySelector('fieldset');
 
 btnSubmit.addEventListener('click', (event) => {
     event.preventDefault();
@@ -19,7 +20,8 @@ btnSubmit.addEventListener('click', (event) => {
     const isEmailValid = checkValueEmail(emailField)
     const isMsgValid = checkValue(msgField);
     const isCheckboxValid = checkValueCheckbox(checkBoxField);
-    console.log(isFnameValid, isLnameValid, isEmailValid, isMsgValid);
+    const isRadioValid = checkValueRadio(radioFields);
+    console.log(isFnameValid, isLnameValid, isEmailValid, isMsgValid, isRadioValid);
     if (isFnameValid && isLnameValid && isEmailValid && isMsgValid && isCheckboxValid) {
         cardSuccess.classList.add('active');
         setTimeout(() => {
@@ -28,29 +30,28 @@ btnSubmit.addEventListener('click', (event) => {
     }
 })
 
-
 firstnameField.addEventListener('input', () => {
     firstnameError.classList.remove('active');
 })
-
 lastnameField.addEventListener('input', () => {
     lastnameError.classList.remove('active');
 })
-
 emailField.addEventListener('input', () => {
     emailError.classList.remove('active');
     emailError.querySelector('.error-text').textContent = "This field is required";
 })
-
 msgField.addEventListener('input', () => {
     msgError.classList.remove('active');
 })
-
 checkBoxField.addEventListener('change', () => {
     checkBoxError.classList.remove('active');
 })
 
-
+radioFields.forEach(radio => {
+    radio.addEventListener('change', () => {
+        radioFieldError.classList.remove('active');
+    })
+})
 
 function checkValue(dataField) {
     if (dataField.value.trim() === "") {
@@ -60,8 +61,6 @@ function checkValue(dataField) {
     else
         return true;
 }
-
-
 function checkValueCheckbox(dataField) {
     if (dataField.checked)
         return true;
@@ -70,7 +69,6 @@ function checkValueCheckbox(dataField) {
         return false;
     }
 }
-
 function checkValueEmail(dataField) {
     if (checkValue(dataField)) {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -84,4 +82,13 @@ function checkValueEmail(dataField) {
     }
     else
         return false;
+}
+
+function checkValueRadio(dataFields) {
+    for (const radio of dataFields) {
+        if (radio.checked)
+            return true;
+    };
+    radioFieldError.classList.add('active');
+    return false;
 }

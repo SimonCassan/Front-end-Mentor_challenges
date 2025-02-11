@@ -14,10 +14,10 @@
 
 
 :root {
-    --green-200: #E0F1E8;
-    --gray: #86A2A5;
     --gray-900: #2A4144;
+    --gray: #86A2A5;
     --green-600: #0C7D69;
+    --green-200: #E0F1E8;
     --red: #D73C3C;
 }
 
@@ -197,7 +197,8 @@ fieldset legend {
 }
 
 .active input,
-.active textarea {
+.active textarea,
+.active .label-radio {
     border-color: var(--red);
 }
 
