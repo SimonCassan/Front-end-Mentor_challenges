@@ -26,7 +26,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/workit-landing-page-with-grid-and-flexbox-6CtJiy6wsI)
-- Live Site URL: [GitHub Pages](https://simoncassan.github.io/Front-end-Mentor_workit-landing-page)
+- Live Site URL: [GitHub Pages](https://simoncassan.github.io/Front-end-Mentor_challenges/Front-end-Mentor_workit-landing-page)
 
 ## Author
 
