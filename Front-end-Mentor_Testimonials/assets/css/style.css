@@ -1,0 +1,99 @@
+@font-face {
+    font-family: Barlow;
+    src: url('../fonts/BarlowSemiCondensed-Medium.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Barlow;
+    src: url('../fonts/BarlowSemiCondensed-SemiBold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 600;
+}
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: Barlow, sans-serif;
+}
+
+article {
+    border-radius: 8px;
+    padding: 1.5rem;
+    color: #fff;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.about p:last-of-type {
+    opacity: 0.5;
+}
+
+
+img {
+    width: 28px;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    position: absolute;
+    bottom: 0.25rem;
+    left: 0.25rem;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
