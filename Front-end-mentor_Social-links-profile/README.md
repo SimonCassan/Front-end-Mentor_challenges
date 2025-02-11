@@ -26,7 +26,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/social-links-profile-with-flexbox-s-g-xObFC0)
-- Live Site URL: [Github-pages](https://simoncassan.github.io/Front-end-mentor_Social_links_profile/)
+- Live Site URL: [Github-pages](https://simoncassan.github.io/Front-end-Mentor_challenges/Front-end-mentor_Social-links-profile/)
 
 
 ## Author
