@@ -88,7 +88,7 @@ input,
 .label-radio,
 textarea {
     border-radius: 8px;
-    padding: 0.75rem 1.5rem;
+    padding: 1rem 1.5rem;
     border: 1px solid var(--gray);
     transition: all 0.3s;
 }
@@ -166,6 +166,7 @@ fieldset legend {
     color: #fff;
     padding: 1rem 0;
     transition: all 0.3s;
+    text-align: center;
 }
 
 .btn-green:hover {
@@ -206,6 +207,10 @@ fieldset legend {
 
 
 @media screen and (min-width:768px) {
+    .card-form {
+        padding: 2.5rem;
+    }
+
     .form-row.form-name {
         grid-column: span 1;
     }
