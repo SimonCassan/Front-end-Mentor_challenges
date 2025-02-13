@@ -13,7 +13,9 @@
 }
 
 
-
+:root {
+    --gray: #48556A;
+}
 
 
 * {
@@ -26,12 +28,40 @@
 
 body {
     font-family: Barlow, sans-serif;
+    background-color: #ECF2F8;
+    position: relative;
+    padding: 2rem 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
 article {
+    max-width: 400px;
+    margin: auto;
     border-radius: 8px;
     padding: 1.5rem;
     color: #fff;
+}
+
+h2 {
+    margin: 1.125rem 0 1rem;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.quote {
+    opacity: 0.7;
+    line-height: 18px;
+}
+
+.about .name,
+.quote {
+    font-size: 0.813rem;
+    font-weight: 600;
 }
 
 .about {
@@ -40,8 +70,19 @@ article {
     gap: 1rem;
 }
 
+.about div {
+    padding: 0.2rem 0;
+}
+
+.about .name {
+    line-height: 13px;
+}
+
+
 .about p:last-of-type {
     opacity: 0.5;
+    line-height: 11px;
+    font-size: 0.688rem;
 }
 
 
@@ -52,41 +93,29 @@ img {
 
 
 
+#article1 {
+    background-color: #733FC8;
+}
 
+#article2 {
+    background-color: var(--gray);
+}
 
+#article3,
+#article5 {
+    background-color: #fff;
+    color: var(--gray);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#article4 {
+    background-color: #19202D;
+}
 
 footer {
     position: absolute;
     bottom: 0.25rem;
-    left: 0.25rem;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .attribution {
@@ -96,4 +125,51 @@ footer {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+
+@media screen and (min-width: 780px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        justify-items: center;
+        margin: 0 2rem;
+    }
+
+    article {
+        max-width: initial;
+        margin: 0;
+    }
+
+    #article1,
+    #article4 {
+        grid-column: span 2;
+    }
+
+    #article2,
+    #article3 {
+        grid-column: span 1;
+    }
+
+    #article5 {
+        grid-column: 1 / -1;
+        justify-self: center;
+    }
+}
+
+
+@media screen and (min-width: 950px) {
+    main {
+        max-width: 1120px;
+        margin: auto;
+        padding: 2rem;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #article5 {
+        grid-column: 4/5;
+        grid-row: 1/3;
+    }
 }
