@@ -31,6 +31,7 @@ body {
     background-color: #ECF2F8;
     position: relative;
     padding: 2rem 0;
+    min-height: 100dvh;
 }
 
 main {
@@ -45,6 +46,7 @@ article {
     border-radius: 8px;
     padding: 1.5rem;
     color: #fff;
+    box-shadow: 0 0 1rem #333;
 }
 
 h2 {
@@ -160,6 +162,10 @@ footer {
 
 
 @media screen and (min-width: 950px) {
+    body {
+        display: flex;
+    }
+
     main {
         max-width: 1120px;
         margin: auto;
