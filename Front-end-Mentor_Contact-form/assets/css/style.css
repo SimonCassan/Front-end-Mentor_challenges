@@ -111,6 +111,13 @@ input:not(input[type="checkbox"], input[type="radio"], .btn-green):focus {
     outline: 1px solid var(--green-600);
 }
 
+.active input:not(input[type="checkbox"], input[type="radio"], .btn-green):hover,
+.active textarea:hover,
+.active .label-radio:has(input[type="radio"]:hover),
+.active input:not(input[type="checkbox"], input[type="radio"], .btn-green):focus {
+    outline: 1px solid var(--red);
+}
+
 textarea:focus {
     outline: none;
 }
@@ -204,7 +211,18 @@ fieldset legend {
     border-color: var(--red);
 }
 
+footer {
+    position: absolute;
+}
 
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
 
 @media screen and (min-width:768px) {
     .card-form {
@@ -224,49 +242,4 @@ fieldset legend {
     .form-radio label {
         grid-column: span 1;
     }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-footer {
-    position: absolute;
-}
-
-.attribution {
-    font-size: 11px;
-    text-align: center;
-}
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
 }
