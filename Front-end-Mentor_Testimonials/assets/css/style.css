@@ -88,7 +88,7 @@ h2 {
 }
 
 
-img {
+img:not(.bg-pattern) {
     width: 28px;
     border-radius: 50%;
 }
@@ -97,6 +97,15 @@ img {
 
 #article1 {
     background-color: #733FC8;
+    position: relative;
+    z-index: 1;
+}
+
+.bg-pattern {
+    position: absolute;
+    top: 0;
+    right: 5%;
+    z-index: -1;
 }
 
 #article2 {
@@ -158,6 +167,10 @@ footer {
         grid-column: 1 / -1;
         justify-self: center;
     }
+
+    .bg-pattern {
+        right: 10%;
+    }
 }
 
 
@@ -172,6 +185,10 @@ footer {
         padding: 2rem;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 1fr 1fr;
+    }
+
+    .bg-pattern {
+        right: 15%;
     }
 
     #article5 {
