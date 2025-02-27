@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'Red Hat';
+    src: url('../fonts/RedHatDisplay-Black.ttf') format('truetype');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Red Hat';
+    src: url('../fonts/RedHatDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+:root {
+    --cyan-600: #4D96A9;
+    --cyan-300: #8FE3F9;
+    --purple-600: #855FB1;
+    --purple-300: #D9B8FF;
+    --slate-900: #28283D;
+    --slate-600: #87879D;
+    --slate-300: #D1D1DF;
+    --white: #FAFAFA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Red Hat', sans-serif;
+    line-height: 110%;
+    font-weight: 900;
+    background-color: var(--white);
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.btn {
+    border-radius: 29px;
+    padding: 1rem 2.5rem;
+}
+
+.btn-purple {
+    background-color: var(--purple-600);
+}
+
+.btn-cyan {
+    background-color: var(--cyan-600);
+}
+
+.btn-cyan span {
+    color: var(--cyan-300)
+}
