@@ -29,7 +29,6 @@
 
 body {
     font-family: 'Red Hat', sans-serif;
-    line-height: 110%;
     font-weight: 900;
     background-color: var(--white);
 }
@@ -39,9 +38,124 @@ a {
     color: var(--white);
 }
 
+
+
+
+nav {
+    padding: 3rem 5rem 0;
+}
+
+.hero {
+    padding: 4rem 2rem 2rem;
+}
+
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.hero-content,
+.main-content,
+footer {
+    text-align: center;
+}
+
+.main-content {
+    padding: 2rem 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.main-content h2 {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.main-content-text p:first-of-type {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 4px;
+    color: var(--cyan-600);
+}
+
+.main-content-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.main-content-gallery img {
+    border-radius: 1rem;
+}
+
+.number {
+    width: 56px;
+    height: 56px;
+    border: 1px solid var(--slate-300);
+    background-color: var(--white);
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number span {
+    color: var(--slate-600);
+    font-size: 1rem;
+}
+
+h1,
+h2 {
+    color: var(--slate-900);
+    line-height: 110%;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    color: var(--slate-600);
+}
+
+p,
+.btn {
+    line-height: 150%;
+}
+
+img {
+    width: 100%;
+}
+
+.footer-content {
+    background-image: url('../img/mobile/image-footer.jpg');
+    background-position: top;
+    background-size: cover;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+footer h2,
+footer p {
+    color: var(--white);
+}
+
 .btn {
     border-radius: 29px;
     padding: 1rem 2.5rem;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
 }
 
 .btn-purple {
