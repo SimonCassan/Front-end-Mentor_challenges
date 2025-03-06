@@ -43,17 +43,38 @@ a {
 
 nav {
     padding: 3rem 5rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav img {
+    width: 118px;
 }
 
 .hero {
     padding: 4rem 2rem 2rem;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
 }
 
+.hero img {
+    width: 125%;
+}
 
 .hero-content {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+}
+
+.btns-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 
 .hero-content,
@@ -67,6 +88,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 4rem;
+    margin-top: 5rem;
 }
 
 .main-content h2 {
@@ -101,6 +123,18 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+.number::before {
+    content: "";
+    position: absolute;
+    top: -5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 5rem;
+    background-color: var(--slate-300);
 }
 
 .number span {
@@ -124,6 +158,7 @@ h2 {
 
 p {
     color: var(--slate-600);
+    font-weight: 500;
 }
 
 p,
@@ -135,14 +170,20 @@ img {
     width: 100%;
 }
 
+footer {
+    margin-top: 5rem;
+}
+
 .footer-content {
-    background-image: url('../img/mobile/image-footer.jpg');
+    background: url('../img/mobile/image-footer.jpg'), #5798AA;
+    background-blend-mode: soft-light;
     background-position: top;
     background-size: cover;
     padding: 4rem 2rem;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    margin-top: -1.75rem;
 }
 
 footer h2,
@@ -155,7 +196,6 @@ footer p {
     padding: 1rem 2.5rem;
     text-align: center;
     width: fit-content;
-    margin: auto;
 }
 
 .btn-purple {
@@ -168,4 +208,56 @@ footer p {
 
 .btn-cyan span {
     color: var(--cyan-300)
+}
+
+
+@media screen and (min-width: 768px) {
+    .hero {
+        padding-bottom: 4rem;
+    }
+
+    .btns-block {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .main-content-gallery {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .footer-content {
+        background: url('../img/tablet/image-footer.jpg'), #5798AA;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .hero {
+        position: relative;
+    }
+
+    .hero img {
+        display: none;
+    }
+
+    .hero::before,
+    .hero::after {
+        content: "";
+        width: 394px;
+        height: 303px;
+        position: absolute;
+    }
+
+    .hero::before {
+        background-image: url('../img/desktop/image-hero-left.png');
+        left: 0;
+    }
+
+    .hero::after {
+        background-image: url('../img/desktop/image-hero-right.png');
+        right: 0;
+    }
+
+    .footer-content {
+        background: url('../img/desktop/image-footer.jpg'), #5798AA;
+    }
 }
