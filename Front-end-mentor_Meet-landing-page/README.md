@@ -10,8 +10,6 @@ This is a solution to the [Meet landing page challenge on Frontend Mentor](https
   - [Links](#links)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -23,12 +21,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./assets/images/Screenshot.png)
+![](./assets/images/screenshot.png)
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/social-links-profile-with-flexbox-s-g-xObFC0)
-- Live Site URL: [Github-pages](https://simoncassan.github.io/Front-end-Mentor_challenges/Front-end-mentor_Social-links-profile/)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-landing-page-with-flexbox-1Dqxt5Suhf)
+- Live Site URL: [Github-pages](https://simoncassan.github.io/Front-end-Mentor_challenges/Front-end-mentor_Meet-landing-page/)
 
 ## Author
 
