@@ -1,0 +1,198 @@
+@font-face {
+    font-family: Barlow;
+    src: url('../fonts/BarlowSemiCondensed-Medium.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Barlow;
+    src: url('../fonts/BarlowSemiCondensed-SemiBold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 600;
+}
+
+
+:root {
+    --gray: #48556A;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: Barlow, sans-serif;
+    background-color: #ECF2F8;
+    position: relative;
+    padding: 2rem 0;
+    min-height: 100dvh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+article {
+    max-width: 400px;
+    margin: auto;
+    border-radius: 8px;
+    padding: 1.5rem;
+    color: #fff;
+    box-shadow: 0 0 1rem #333;
+}
+
+h2 {
+    margin: 1.125rem 0 1rem;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.quote {
+    opacity: 0.7;
+    line-height: 18px;
+}
+
+.about .name,
+.quote {
+    font-size: 0.813rem;
+    font-weight: 600;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.about div {
+    padding: 0.2rem 0;
+}
+
+.about .name {
+    line-height: 13px;
+}
+
+
+.about p:last-of-type {
+    opacity: 0.5;
+    line-height: 11px;
+    font-size: 0.688rem;
+}
+
+
+img:not(.bg-pattern) {
+    width: 28px;
+    border-radius: 50%;
+}
+
+
+
+#article1 {
+    background-color: #733FC8;
+    position: relative;
+    z-index: 1;
+}
+
+.bg-pattern {
+    position: absolute;
+    top: 0;
+    right: 5%;
+    z-index: -1;
+}
+
+#article2 {
+    background-color: var(--gray);
+}
+
+#article3,
+#article5 {
+    background-color: #fff;
+    color: var(--gray);
+}
+
+#article4 {
+    background-color: #19202D;
+}
+
+footer {
+    position: absolute;
+    bottom: 0.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media screen and (min-width: 780px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        justify-items: center;
+        margin: 0 2rem;
+    }
+
+    article {
+        max-width: initial;
+        margin: 0;
+    }
+
+    #article1,
+    #article4 {
+        grid-column: span 2;
+    }
+
+    #article2,
+    #article3 {
+        grid-column: span 1;
+    }
+
+    #article5 {
+        grid-column: 1 / -1;
+        justify-self: center;
+    }
+
+    .bg-pattern {
+        right: 10%;
+    }
+}
+
+
+@media screen and (min-width: 950px) {
+    body {
+        display: flex;
+    }
+
+    main {
+        max-width: 1120px;
+        margin: auto;
+        padding: 2rem;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .bg-pattern {
+        right: 15%;
+    }
+
+    #article5 {
+        grid-column: 4/5;
+        grid-row: 1/3;
+    }
+}
