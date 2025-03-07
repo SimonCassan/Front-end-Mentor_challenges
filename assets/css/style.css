@@ -61,6 +61,7 @@ nav img {
 }
 
 .hero img {
+    max-width: 820px;
     width: 125%;
 }
 
@@ -68,6 +69,8 @@ nav img {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    max-width: 440px;
+    margin: auto;
 }
 
 .btns-block {
@@ -84,11 +87,17 @@ footer {
 }
 
 .main-content {
+    max-width: 1120px;
     padding: 2rem 2rem 4rem;
     display: flex;
     flex-direction: column;
     gap: 4rem;
-    margin-top: 5rem;
+    margin: 5rem auto 0;
+}
+
+.main-content-text {
+    max-width: 540px;
+    margin: auto;
 }
 
 .main-content h2 {
@@ -174,16 +183,21 @@ footer {
     margin-top: 5rem;
 }
 
-.footer-content {
+.footer-bg {
     background: url('../img/mobile/image-footer.jpg'), #5798AA;
     background-blend-mode: soft-light;
     background-position: top;
     background-size: cover;
     padding: 4rem 2rem;
+    margin-top: -1.75rem;
+}
+
+.footer-content {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    margin-top: -1.75rem;
+    max-width: 1120px;
+    margin: auto;
 }
 
 footer h2,
@@ -196,6 +210,7 @@ footer p {
     padding: 1rem 2.5rem;
     text-align: center;
     width: fit-content;
+    white-space: nowrap;
 }
 
 .btn-purple {
@@ -225,12 +240,12 @@ footer p {
         grid-template-columns: repeat(4, 1fr);
     }
 
-    .footer-content {
-        background: url('../img/tablet/image-footer.jpg'), #5798AA;
+    .footer-bg {
+        background-image: url('../img/tablet/image-footer.jpg');
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
     .hero {
         position: relative;
     }
@@ -249,15 +264,28 @@ footer p {
 
     .hero::before {
         background-image: url('../img/desktop/image-hero-left.png');
-        left: 0;
+        left: -25px;
     }
 
     .hero::after {
         background-image: url('../img/desktop/image-hero-right.png');
-        right: 0;
+        right: -25px;
+    }
+
+    .footer-bg {
+        background-image: url('../img/desktop/image-footer.jpg');
+        padding: 7rem 5rem;
     }
 
     .footer-content {
-        background: url('../img/desktop/image-footer.jpg'), #5798AA;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+        gap: 2rem;
+    }
+
+    .footer-content p {
+        margin-right: 4rem;
     }
 }
