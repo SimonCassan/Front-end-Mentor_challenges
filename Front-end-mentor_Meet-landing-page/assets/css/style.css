@@ -29,13 +29,19 @@
 
 body {
     font-family: 'Red Hat', sans-serif;
-    font-weight: 900;
     background-color: var(--white);
 }
 
 a {
     text-decoration: none;
     color: var(--white);
+}
+
+h1,
+h2,
+.main-content-text p:first-of-type,
+a {
+    font-weight: 900;
 }
 
 
@@ -292,6 +298,10 @@ footer p {
 }
 
 @media screen and (min-width: 1440px) {
+    nav {
+        padding-top: 5rem;
+    }
+
     .hero {
         position: relative;
     }
@@ -319,7 +329,7 @@ footer p {
     }
 
     h1 {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
     h2 {
