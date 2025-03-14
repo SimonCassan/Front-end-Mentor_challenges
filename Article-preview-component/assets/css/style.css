@@ -1,0 +1,116 @@
+@font-face {
+    font-family: Manrope;
+    src: url('../font/Manrope-VariableFont_wght.ttf') format('truetype');
+    font-weight: 200 800;
+}
+
+:root {
+    --grey-900: #48556A;
+    --grey-500: #6E8098;
+    --grey-400: #9DAEC2;
+    --grey-200: #ECF2F8;
+    --white: #fff
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Manrope, sans-serif;
+    line-height: 140%;
+    background-color: var(--grey-200);
+}
+
+h1 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.25px;
+    line-height: 130%;
+}
+
+h1,
+h2 {
+    color: var(--grey-900);
+}
+
+h2,
+p {
+    font-size: 0.813rem;
+}
+
+p {
+
+    color: var(--grey-500);
+}
+
+img {
+    width: 100%;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    max-width: 730px;
+    width: 80%;
+    margin: auto;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 10px;
+}
+
+.card-img {
+    border-radius: 10px 10px 0 0;
+}
+
+.card-content {
+    margin: 0 2rem 1rem;
+}
+
+.share-container {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    width: 100%;
+    margin-top: 2.5rem;
+}
+
+.author {
+    display: flex;
+    gap: 1rem;
+    white-space: nowrap;
+}
+
+.author-avatar {
+    width: 40px;
+    height: 40px;
+}
+
+.share-icon {
+    width: 15px;
+    height: 13px;
+    z-index: 10;
+}
+
+.author-avatar,
+a {
+    border-radius: 50%;
+}
+
+a {
+    background-color: var(--grey-200);
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
