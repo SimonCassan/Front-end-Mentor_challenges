@@ -31,9 +31,14 @@ h1 {
     line-height: 130%;
 }
 
-h1,
-h2 {
+h1 {
     color: var(--grey-900);
+}
+
+h2 {
+    color: var(--grey-400);
+    text-transform: uppercase;
+    letter-spacing: 3.25px;
 }
 
 h2,
@@ -42,12 +47,29 @@ p {
 }
 
 p {
-
     color: var(--grey-500);
+}
+
+P time {
+    color: var(--grey-400);
 }
 
 img {
     width: 100%;
+}
+
+.share-button {
+    background-color: var(--grey-200);
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.author-avatar,
+.share-button {
+    border-radius: 50%;
 }
 
 main {
@@ -58,6 +80,7 @@ main {
 }
 
 .card {
+    position: relative;
     max-width: 730px;
     width: 80%;
     margin: auto;
@@ -78,7 +101,7 @@ main {
 
 .share-container {
     display: flex;
-    gap: 4rem;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     margin-top: 2.5rem;
@@ -98,19 +121,96 @@ main {
 .share-icon {
     width: 15px;
     height: 13px;
-    z-index: 10;
+    z-index: 3;
 }
 
-.author-avatar,
-a {
-    border-radius: 50%;
-}
-
-a {
-    background-color: var(--grey-200);
-    width: 32px;
-    height: 32px;
+.share-card {
+    visibility: hidden;
+    opacity: 0;
+    background-color: var(--grey-900);
+    position: absolute;
+    bottom: 0;
+    left: 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
+    height: 78px;
+    padding: 1.25rem 2rem;
+    border-radius: 0 0 10px 10px;
+    z-index: 4;
+    transition: opacity 0.3s, visibility 1s 0s;
+}
+
+.share-card.active {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+.share-card-content {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.share-card img:not(.share-icon) {
+    width: 20px;
+}
+
+.share-card .share-button {
+    background-color: var(--grey-500);
+}
+
+
+@media screen and (min-width: 767px) {
+    .card {
+        flex-direction: row;
+
+    }
+
+    .card-img {
+        border-radius: 10px 0 0 10px;
+        width: 33%;
+        object-fit: cover;
+    }
+
+    .card-content {
+        margin: 2.5rem 2rem;
+    }
+
+    .share-card {
+        height: 55px;
+        border-radius: 10px;
+        left: initial;
+        right: -109px;
+        bottom: 55px;
+        justify-content: center;
+        width: 250px;
+    }
+
+    .share-card::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        /* Place la flèche en bas de l'infobulle */
+        left: 50%;
+        transform: translateX(-50%);
+        border-width: 8px;
+        border-style: solid;
+        border-color: var(--grey-900) transparent transparent transparent;
+        /* Flèche pointant vers le bas */
+    }
+
+    .card {
+        position: initial;
+    }
+
+    .share-container {
+        position: relative;
+    }
+
+    #share-button-active {
+        display: none;
+    }
+
 }
