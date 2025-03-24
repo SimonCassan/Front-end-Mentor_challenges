@@ -12,3 +12,5 @@ for (const button of shareButtons) {
         shareCard.classList.toggle('active');
     })
 }
+
+console.log("hello there");
