@@ -115,9 +115,9 @@ main {
     left: 0;
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     width: 100%;
-    height: 78px;
+    height: 75px;
     padding: 1.25rem 2rem;
     border-radius: 0 0 10px 10px;
     z-index: 4;
@@ -132,7 +132,10 @@ main {
 
 .share-card-content {
     display: flex;
-    gap: 0.5rem;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 0.25rem;
+    width: 64%;
 }
 
 .share-card-content h2 {
@@ -140,6 +143,16 @@ main {
     text-transform: uppercase;
     letter-spacing: 3.25px;
 }
+
+.share-card-content a img {
+    display: block;
+    transition: transform 0.3s;
+}
+
+.share-card-content a img:hover {
+    transform: scale(1.2);
+}
+
 
 .share-card img:not(.share-icon) {
     width: 20px;
@@ -152,6 +165,9 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    right: 20px;
+    transition: box-shadow 0.3s;
 }
 
 .share-button:hover {
@@ -171,7 +187,7 @@ main {
 @media screen and (min-width: 767px) {
     .card {
         flex-direction: row;
-
+        position: initial;
     }
 
     .card-img {
@@ -188,27 +204,26 @@ main {
         height: 55px;
         border-radius: 10px;
         left: initial;
-        right: -109px;
+        right: -90px;
         bottom: 55px;
         justify-content: center;
         width: 250px;
+    }
+
+    .share-card-content {
+        width: initial;
+        gap: 1.5rem;
     }
 
     .share-card::after {
         content: "";
         position: absolute;
         top: 100%;
-        /* Place la flèche en bas de l'infobulle */
         left: 50%;
         transform: translateX(-50%);
         border-width: 8px;
         border-style: solid;
         border-color: var(--grey-900) transparent transparent transparent;
-        /* Flèche pointant vers le bas */
-    }
-
-    .card {
-        position: initial;
     }
 
     .share-container {
