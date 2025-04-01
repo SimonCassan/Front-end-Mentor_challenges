@@ -1,0 +1,123 @@
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+:root {
+    --grey: #949494;
+    --blue800: #242742;
+    --blue700: #36384D;
+    --red: #FF6155;
+    --gradient-start: #FF6A3A;
+    --gradient-end: #FF527B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 150%;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+h1,
+label,
+button {
+    font-weight: 700;
+}
+
+h1,
+label,
+p,
+li {
+    color: var(--blue800);
+}
+
+label {
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    position: relative;
+    padding-left: 35px;
+}
+
+ul li::before {
+    content: url('../images/icon-list.svg');
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    /* width: 16px; 
+  height: 16px; */
+}
+
+
+.card-content {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.card-content ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-item {
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+}
+
+input {
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--grey);
+}
+
+button {
+    font-family: Roboto, sans-serif;
+    border: none;
+    color: #fff;
+    background-color: var(--blue800);
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+.success-message {
+    display: none;
+}
