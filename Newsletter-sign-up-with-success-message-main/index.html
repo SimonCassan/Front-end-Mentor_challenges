@@ -13,7 +13,7 @@
   <!-- Sign-up form start -->
   <main>
     <section class="card">
-      <img src="./assets/images/illustration-sign-up-mobile.svg" alt="Decorative illustration">
+      <div class="image"></div>
       <div class="card-content">
         <h1>Stay updated!</h1>
         <p>Join 60,000+ product managers receiving monthly updates on:</p>
@@ -25,18 +25,21 @@
 
         <form action="#" method="post">
           <label for="email">Email address</label>
-          <input class="form-item" type="email" name="email" id="email" placeholder="email@company.com">
-          <button class="form-item" type="submit">Subscribe to monthly newsletter</button>
+          <input class="item" type="email" name="email" id="email" placeholder="email@company.com">
+          <button class="item" type="submit"><span class="item-text">Subscribe to monthly newsletter</span></button>
         </form>
       </div>
       <!-- Sign-up form end -->
     </section>
     <!-- Success message start -->
     <section class="success-message">
-      <h2>Thanks for subscribing!</h2>
-      <p>A confirmation email has been sent to ash@loremcompany.com.
-        Please open it and click the button inside to confirm your subscription.</p>
-      <button>Dismiss message</button>
+      <div class="success-message-content">
+        <img src="./assets/images/icon-success.svg" alt="Check mark icon">
+        <h2>Thanks for subscribing!</h2>
+        <p>A confirmation email has been sent to <span class="bold">ash@loremcompany.com</span>.
+          Please open it and click the button inside to confirm your subscription.</p>
+      </div>
+      <button class="item"><span class="item-text">Dismiss message</span></button>
     </section>
   </main>
 </body>
