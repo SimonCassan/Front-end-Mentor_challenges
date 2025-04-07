@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/testimonials-grid-section-with-flexbox-and-css-grid-baoU2_Nnzx)
 - Live Site URL: [GitHub Pages](https://simoncassan.github.io/Front-end-Mentor_challenges/Testimonials/)
 
 ## My process

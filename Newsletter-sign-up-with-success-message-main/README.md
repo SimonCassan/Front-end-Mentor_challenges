@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://simoncassan.github.io/Front-end-Mentor_challenges/Newsletter-sign-up-with-success-message-main/)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/newsletter-sign-up-form-with-success-message-with-javascript-kFoTxHfCmV)
+- Live Site URL: [GithHub Pages](https://simoncassan.github.io/Front-end-Mentor_challenges/Newsletter-sign-up-with-success-message-main/)
 
 ## My process
 
