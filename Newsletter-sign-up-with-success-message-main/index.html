@@ -7,12 +7,13 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <script src="./assets/js/script.js" defer></script>
 </head>
 
 <body>
   <!-- Sign-up form start -->
   <main>
-    <section class="card">
+    <section id="card" class="card active">
       <div class="image"></div>
       <div class="card-content">
         <h1>Stay updated!</h1>
@@ -23,8 +24,8 @@
           <li>And much more!</li>
         </ul>
 
-        <form action="#" method="post">
-          <label for="email">Email address</label>
+        <form id="form" action="#" method="post" novalidate>
+          <label for="email">Email address <span id="error-message" class="error"></span></label>
           <input class="item" type="email" name="email" id="email" placeholder="email@company.com">
           <button class="item" type="submit"><span class="item-text">Subscribe to monthly newsletter</span></button>
         </form>
@@ -32,14 +33,14 @@
       <!-- Sign-up form end -->
     </section>
     <!-- Success message start -->
-    <section class="success-message">
+    <section id="success-message" class="success-message">
       <div class="success-message-content">
         <img src="./assets/images/icon-success.svg" alt="Check mark icon">
         <h2>Thanks for subscribing!</h2>
         <p>A confirmation email has been sent to <span class="bold">ash@loremcompany.com</span>.
           Please open it and click the button inside to confirm your subscription.</p>
       </div>
-      <button class="item"><span class="item-text">Dismiss message</span></button>
+      <button id="dismiss" class="item"><span class="item-text">Dismiss message</span></button>
     </section>
   </main>
 </body>
