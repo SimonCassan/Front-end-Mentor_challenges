@@ -1,0 +1,69 @@
+@font-face {
+    font-family: Rubik;
+    src: url(../fonts/Rubik-VariableFont_wght.ttf) format('truetype');
+    font-weight: 300 900;
+}
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --navy950: #0E1323;
+    --navy900: #1C204B;
+    --navy800: #33397A;
+    --navy200: #BBC0FF;
+    --orange300: #FF8B64;
+    --purple700: #7335D2;
+    --purple600: #5747EA;
+    --purple500: #7078C9;
+    --blue300: #55C2E6;
+    --pink300: #FF5E7D;
+    --green400: #4BCF82;
+    --yellow300: #F1C75B;
+    --grey200: #D8D8D8;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Rubik, sans-serif;
+    background-color: var(--navy950);
+}
+
+.card,
+.card div {
+    border-radius: 8px 8px 0 0;
+}
+
+.card div {
+    background-color: var(--navy800);
+    padding: 1.5rem;
+}
+
+.card1 {
+    background-color: var(--orange300);
+}
+
+.card2 {
+    background-color: var(--blue300);
+}
+
+.card3 {
+    background-color: var(--pink300);
+}
+
+.card4 {
+    background-color: var(--green400);
+}
+
+.card5 {
+    background-color: var(--purple600);
+}
+
+.card6 {
+    background-color: var(--yellow300);
+}
