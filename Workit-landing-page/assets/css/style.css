@@ -278,13 +278,13 @@ footer img {
     header::before {
         left: -30px;
         top: 10%;
-        content: url('../images/bg-pattern-1.svg');
+        content: url('../img/bg-pattern-1.svg');
     }
 
     header::after {
         right: 0;
         top: 40%;
-        content: url('../images/bg-pattern-2.svg');
+        content: url('../img/bg-pattern-2.svg');
     }
 
     header h1 {
@@ -316,7 +316,7 @@ footer img {
     }
 
     .article__text::after {
-        content: url('../images/bg-pattern-3.svg');
+        content: url('../img/bg-pattern-3.svg');
         position: absolute;
         right: 0;
         bottom: 0;

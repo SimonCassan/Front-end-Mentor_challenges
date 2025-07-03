@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./assets/images/screenshot.png)
+![](./assets/images/screenshot.jpg)
 
 
 ### Links
