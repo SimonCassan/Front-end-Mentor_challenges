@@ -1,59 +1,87 @@
 [
     {
         "name": "Article preview component",
-        "url": "",
-        "date": "",
-        "categories": "",
-        "difficulty": ""
+        "url": "/Front-end-Mentor_challenges/Article-preview-component/",
+        "date": "2025-04-20",
+        "categories": [
+            "html",
+            "css",
+            "js"
+        ],
+        "difficulty": "newbie"
     },
     {
         "name": "Blog preview card",
-        "url": "",
-        "date": "",
-        "categories": "",
-        "difficulty": ""
+        "url": "/Front-end-Mentor_challenges/Blog-preview-card/",
+        "date": "2025-02-13",
+        "categories": [
+            "html",
+            "css"
+        ],
+        "difficulty": "newbie"
     },
     {
         "name": "Contact form",
-        "url": "",
-        "date": "",
-        "categories": "",
-        "difficulty": ""
+        "url": "/Front-end-Mentor_challenges/Contact-form/",
+        "date": "2025-04-10",
+        "categories": [
+            "html",
+            "css",
+            "js"
+        ],
+        "difficulty": "junior"
     },
     {
         "name": "FAQ accordion",
-        "url": "",
-        "date": "",
-        "categories": "",
-        "difficulty": ""
+        "url": "/Front-end-Mentor_challenges/FAQ-accordion/",
+        "date": "2025-03-22",
+        "categories": [
+            "html",
+            "css",
+            "js"
+        ],
+        "difficulty": "newbie"
     },
     {
         "name": "Four card feature section",
-        "url": "",
-        "date": "",
-        "categories": "",
-        "difficulty": ""
+        "url": "/Front-end-Mentor_challenges/Four-card-feature-section/",
+        "date": "2025-04-04",
+        "categories": [
+            "html",
+            "css"
+        ],
+        "difficulty": "newbie"
     },
     {
         "name": "Meet landing page",
-        "url": "",
-        "date": "",
-        "categories": "",
-        "difficulty": ""
+        "url": "/Front-end-Mentor_challenges/Meet-landing-page/",
+        "date": "2025-04-11",
+        "categories": [
+            "html",
+            "css"
+        ],
+        "difficulty": "newbie"
     },
     {
         "name": "Newsletter",
-        "url": "",
-        "date": "",
-        "categories": "",
-        "difficulty": ""
+        "url": "/Front-end-Mentor_challenges/Newsletter-sign-up-with-success-message-main/",
+        "date": "2025-04-29",
+        "categories": [
+            "html",
+            "css",
+            "js"
+        ],
+        "difficulty": "junior"
     },
     {
         "name": "Product preview card",
-        "url": "",
-        "date": "",
-        "categories": "",
-        "difficulty": ""
+        "url": "/Front-end-Mentor_challenges/Product-preview-card/",
+        "date": "2025-03-10",
+        "categories": [
+            "html",
+            "css"
+        ],
+        "difficulty": "newbie"
     },
     {
         "name": "QRCode",
@@ -67,30 +95,42 @@
     },
     {
         "name": "Recipe page",
-        "url": "",
-        "date": "",
-        "categories": "",
-        "difficulty": ""
+        "url": "/Front-end-Mentor_challenges/Recipe-page/",
+        "date": "2025-03-02",
+        "categories": [
+            "html",
+            "css"
+        ],
+        "difficulty": "newbie"
     },
     {
         "name": "Social links profile",
-        "url": "",
-        "date": "",
-        "categories": "",
-        "difficulty": ""
+        "url": "/Front-end-Mentor_challenges/Social-links-profile/",
+        "date": "2025-02-22",
+        "categories": [
+            "html",
+            "css"
+        ],
+        "difficulty": "newbie"
     },
     {
         "name": "Testimonials",
-        "url": "",
-        "date": "",
-        "categories": "",
-        "difficulty": ""
+        "url": "/Front-end-Mentor_challenges/Testimonials/",
+        "date": "2025-05-03",
+        "categories": [
+            "html",
+            "css"
+        ],
+        "difficulty": "junior"
     },
     {
         "name": "Workit landing page",
-        "url": "",
-        "date": "",
-        "categories": "",
-        "difficulty": ""
+        "url": "/Front-end-Mentor_challenges/Workit-landing-page/",
+        "date": "2025-03-16",
+        "categories": [
+            "html",
+            "css"
+        ],
+        "difficulty": "newbie"
     }
 ]
