@@ -76,7 +76,7 @@ ul li {
 }
 
 ul li::before {
-    content: url('../images/icon-list.svg');
+    content: url('../img/icon-list.svg');
     position: absolute;
     left: 0;
     top: 50%;
@@ -102,7 +102,7 @@ ul li::before {
 }
 
 .image {
-    background-image: url("../images/illustration-sign-up-mobile.svg");
+    background-image: url("../img/illustration-sign-up-mobile.svg");
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -265,7 +265,7 @@ button:hover::after {
 
     .image {
         height: 100%;
-        background-image: url("../images/illustration-sign-up-desktop.svg");
+        background-image: url("../img/illustration-sign-up-desktop.svg");
         max-width: 400px;
     }
 }

@@ -42,7 +42,7 @@ body {
     position: absolute;
     height: 40vh;
     width: 100%;
-    background: url('../images/background-pattern-mobile.svg') bottom no-repeat;
+    background: url('../img/background-pattern-mobile.svg') bottom no-repeat;
     background-size: cover;
     z-index: -1;
 }
@@ -138,6 +138,6 @@ footer {
 
 @media screen and (min-width: 600px) {
     .top-background {
-        background-image: url("../images/background-pattern-desktop.svg");
+        background-image: url("../img/background-pattern-desktop.svg");
     }
 }
