@@ -14,7 +14,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 ## Overview
 ### Screenshot
 
-![](./assets/img/screenshot.jpg)
+![](./screenshot.jpg)
 
 ### Links
 
