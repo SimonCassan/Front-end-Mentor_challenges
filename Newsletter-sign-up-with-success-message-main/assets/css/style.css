@@ -186,6 +186,15 @@ button:hover::after {
     opacity: 1;
 }
 
+.button-invalid {
+    background-color: #949494;
+    cursor: not-allowed;
+}
+
+.button-invalid:hover::after {
+    opacity: 0;
+}
+
 .success-message {
     opacity: 0;
     visibility: hidden;

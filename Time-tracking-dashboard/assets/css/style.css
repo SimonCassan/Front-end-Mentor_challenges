@@ -1,0 +1,132 @@
+@font-face {
+    font-family: Rubik;
+    src: url(../fonts/Rubik-VariableFont_wght.ttf) format('truetype');
+    font-weight: 300 900;
+}
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --navy950: #0E1323;
+    --navy900: #1C204B;
+    --navy800: #33397A;
+    --navy200: #BBC0FF;
+    --orange300: #FF8B64;
+    --purple700: #7335D2;
+    --purple600: #5747EA;
+    --purple500: #7078C9;
+    --blue300: #55C2E6;
+    /* --pink600: #F04667; */
+    --pink400: #FF5E7D;
+    --green400: #4BCF82;
+    --yellow300: #F1C75B;
+    --grey200: #D8D8D8;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Rubik, sans-serif;
+    background-color: var(--navy950);
+    color: var(--white);
+}
+
+main {
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 80%;
+    margin: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.profile-card {
+    padding: 2rem;
+    background-color: var(--purple600);
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-picture {
+    width: 64px;
+    border-radius: 50%;
+    border: 3px solid var(--white);
+}
+
+span {
+    display: block;
+    line-height: 18px;
+    color: var(--navy200);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+h1 {
+    font-weight: 300;
+}
+
+.card {
+    position: relative;
+    background-color: var(--navy900);
+    margin-top: 2.5rem;
+    padding: 1.5rem;
+    height: 160px;
+    border-radius: 1rem;
+}
+
+.card-border {
+    position: absolute;
+    height: 3rem;
+    width: 100%;
+    overflow: hidden;
+    top: -30px;
+    right: 0;
+    border-radius: 1rem 1rem 0 0;
+    z-index: -1;
+}
+
+.icon {
+    position: absolute;
+    right: 17px;
+    top: -15px;
+    z-index: 1;
+}
+
+.card1 .card-border {
+    background-color: var(--orange300);
+}
+
+.card2 .card-border {
+    background-color: var(--blue300);
+}
+
+.card3 .card-border {
+    background-color: var(--pink400);
+}
+
+.card4 .card-border {
+    background-color: var(--green400);
+}
+
+.card5 .card-border {
+    background-color: var(--purple600);
+}
+
+.card6 .card-border {
+    background-color: var(--yellow300);
+}
