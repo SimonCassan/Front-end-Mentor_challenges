@@ -7,84 +7,87 @@
         "difficulty": ""
     },
     {
-        "name": "Article preview component",
+        "name": "Blog preview card",
         "url": "",
         "date": "",
         "categories": "",
         "difficulty": ""
     },
     {
-        "name": "Article preview component",
+        "name": "Contact form",
         "url": "",
         "date": "",
         "categories": "",
         "difficulty": ""
     },
     {
-        "name": "Article preview component",
+        "name": "FAQ accordion",
         "url": "",
         "date": "",
         "categories": "",
         "difficulty": ""
     },
     {
-        "name": "Article preview component",
+        "name": "Four card feature section",
         "url": "",
         "date": "",
         "categories": "",
         "difficulty": ""
     },
     {
-        "name": "Article preview component",
+        "name": "Meet landing page",
         "url": "",
         "date": "",
         "categories": "",
         "difficulty": ""
     },
     {
-        "name": "Article preview component",
+        "name": "Newsletter",
         "url": "",
         "date": "",
         "categories": "",
         "difficulty": ""
     },
     {
-        "name": "Article preview component",
+        "name": "Product preview card",
         "url": "",
         "date": "",
         "categories": "",
         "difficulty": ""
     },
     {
-        "name": "Article preview component",
+        "name": "QRCode",
+        "url": "/Front-end-Mentor_challenges/QRcode/",
+        "date": "2025-02-03",
+        "categories": [
+            "html",
+            "css"
+        ],
+        "difficulty": "newbie"
+    },
+    {
+        "name": "Recipe page",
         "url": "",
         "date": "",
         "categories": "",
         "difficulty": ""
     },
     {
-        "name": "Article preview component",
+        "name": "Social links profile",
         "url": "",
         "date": "",
         "categories": "",
         "difficulty": ""
     },
     {
-        "name": "Article preview component",
+        "name": "Testimonials",
         "url": "",
         "date": "",
         "categories": "",
         "difficulty": ""
     },
     {
-        "name": "Article preview component",
-        "url": "",
-        "date": "",
-        "categories": "",
-        "difficulty": ""
-    },
-    {
-        "name": "Article preview component",
+        "name": "Workit landing page",
         "url": "",
         "date": "",
         "categories": "",
