@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Figtree', Arial, sans-serif;
+}
+
+main {
+    min-height: 80dvh;
+    padding: 2rem;
+}
+
+img {
+    width: 100%;
+}
+
+.header-block {
+    max-width: 1440px;
+    margin: 2rem auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid grey;
+}
+
+.buttons-block {
+    display: flex;
+    gap: 1rem;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.main-container {
+    column-count: 4;
+    column-gap: 8px;
+}
+
+section {
+    border: 1px solid black;
+    width: 250px;
+    height: fit-content;
+    margin-bottom: 2rem;
+    break-inside: avoid;
+    text-align: center;
+}
+
+
+footer {
+    text-align: center;
+    margin: 2rem;
+}
