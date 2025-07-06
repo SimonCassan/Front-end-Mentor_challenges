@@ -8,7 +8,7 @@
             "css",
             "js"
         ],
-        "difficulty": "newbie"
+        "difficulty": 1
     },
     {
         "name": "Blog preview card",
@@ -18,7 +18,7 @@
             "html",
             "css"
         ],
-        "difficulty": "newbie"
+        "difficulty": 1
     },
     {
         "name": "Contact form",
@@ -29,7 +29,7 @@
             "css",
             "js"
         ],
-        "difficulty": "junior"
+        "difficulty": 2
     },
     {
         "name": "FAQ accordion",
@@ -40,7 +40,7 @@
             "css",
             "js"
         ],
-        "difficulty": "newbie"
+        "difficulty": 1
     },
     {
         "name": "Four card feature section",
@@ -50,7 +50,7 @@
             "html",
             "css"
         ],
-        "difficulty": "newbie"
+        "difficulty": 1
     },
     {
         "name": "Meet landing page",
@@ -60,7 +60,7 @@
             "html",
             "css"
         ],
-        "difficulty": "newbie"
+        "difficulty": 1
     },
     {
         "name": "Newsletter",
@@ -71,7 +71,7 @@
             "css",
             "js"
         ],
-        "difficulty": "junior"
+        "difficulty": 2
     },
     {
         "name": "Product preview card",
@@ -81,7 +81,7 @@
             "html",
             "css"
         ],
-        "difficulty": "newbie"
+        "difficulty": 1
     },
     {
         "name": "QRCode",
@@ -91,7 +91,7 @@
             "html",
             "css"
         ],
-        "difficulty": "newbie"
+        "difficulty": 1
     },
     {
         "name": "Recipe page",
@@ -101,7 +101,7 @@
             "html",
             "css"
         ],
-        "difficulty": "newbie"
+        "difficulty": 1
     },
     {
         "name": "Social links profile",
@@ -111,7 +111,7 @@
             "html",
             "css"
         ],
-        "difficulty": "newbie"
+        "difficulty": 1
     },
     {
         "name": "Testimonials",
@@ -121,7 +121,7 @@
             "html",
             "css"
         ],
-        "difficulty": "junior"
+        "difficulty": 2
     },
     {
         "name": "Workit landing page",
@@ -131,6 +131,6 @@
             "html",
             "css"
         ],
-        "difficulty": "newbie"
+        "difficulty": 1
     }
 ]
