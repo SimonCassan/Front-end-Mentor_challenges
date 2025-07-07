@@ -33,7 +33,7 @@ h2 {
 h1 {
     font-size: 1.5rem;
 
-    @media screen and (min-width: 850px) {
+    @media screen and (min-width: 860px) {
         font-size: 2.5rem;
     }
 }
@@ -64,7 +64,7 @@ main {
     justify-content: space-between;
     border-bottom: 2px solid var(--color-orange);
 
-    @media screen and (min-width: 850px) {
+    @media screen and (min-width: 860px) {
         flex-direction: row;
         padding: 2rem;
     }
@@ -76,7 +76,7 @@ main {
     gap: 1rem;
     margin-top: 1rem;
 
-    @media screen and (min-width: 850px) {
+    @media screen and (min-width: 860px) {
         margin-top: 0;
     }
 }
@@ -113,7 +113,7 @@ button img {
         column-count: 2;
     }
 
-    @media screen and (min-width: 850px) {
+    @media screen and (min-width: 860px) {
         column-count: 3;
     }
 

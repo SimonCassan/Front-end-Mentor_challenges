@@ -2,7 +2,7 @@ function Header() {
     return (
         <header>
             <div className="header-block">
-                <h1>My Challenges:</h1>
+                <h1>My Challenges&nbsp;:</h1>
                 <div className="buttons-block">
                     <button>
                         <img src="./img/recent-older.svg" alt="" />Most Recent
