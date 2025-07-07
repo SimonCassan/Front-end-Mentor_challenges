@@ -6,7 +6,7 @@ const difficultyMap = {
     5: { label: 'Guru', class: 'difficulty-expert' },
     default: { label: 'Void', class: 'difficulty-unknown' }
 };
-
+const BASE_URL = 'https://simoncassan.github.io/Front-end-Mentor_challenges';
 
 async function fetchChallenges() {
     const res = await fetch('data.json');
@@ -15,15 +15,16 @@ async function fetchChallenges() {
 
 const main = document.getElementById('main-container');
 const challenges = await fetchChallenges();
-const BASE_URL = 'https://simoncassan.github.io/Front-end-Mentor_challenges';
 
+// construction des cartes
 challenges.forEach(challenge => {
     const card = document.createElement('div');
     card.classList.add('card');
     const link = document.createElement('a');
     link.classList.add('card_link');
     link.setAttribute('href', `${BASE_URL}${challenge.url}`);
-    link.setAttribute('aria-label', `${challenge.name} preview on GitHub Pages`)
+    link.setAttribute('aria-label', `${challenge.name} preview on GitHub Pages`);
+    link.setAttribute('target', '_blank');
     const titleCard = document.createElement('h2');
     const img = document.createElement('img');
     img.setAttribute("src", `.${challenge.url}screenshot.jpg`);

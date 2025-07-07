@@ -8,14 +8,16 @@
     --color-bg: #f9fafb;
     --color-white: #fff;
     --color-border: #e5e7eb;
-    --color-orange: #FFB185;
-    --color-title: #111827;
-    --color-veryeasy: hsl(189 50% 61%);
-    --color-easy: hsl(78 65% 55%);
-    --color-medium: hsl(45 97% 48%);
-    --color-hard: hsl(29 90% 55%);
-    --color-expert: hsl(351 84% 55%);
-    --color-unknown: hsl(322, 76%, 13%);
+    --color-orange: #FF8C8C;
+    --color-title: #1c2022;
+    --color-link: #008073;
+    --color-link-hover: #00807379;
+    --color-veryeasy: #6abecd;
+    --color-easy: #aad742;
+    --color-medium: #f1b604;
+    --color-hard: #f48925;
+    --color-expert: #ed2c49;
+    --color-unknown: #3a0828;
 }
 
 body {
@@ -42,6 +44,7 @@ img {
 
 a {
     text-decoration: none;
+    color: var(--color-orange);
 }
 
 ul {
@@ -70,7 +73,6 @@ main {
 .buttons-block {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 1rem;
     margin-top: 1rem;
 
@@ -80,6 +82,9 @@ main {
 }
 
 button {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
     border-radius: 8px;
     border: 1px solid transparent;
     padding: 0.6rem 1.2rem;
@@ -87,11 +92,15 @@ button {
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
-    transition: border-color 0.25s;
+    transition: border-color 0.3s;
 }
 
 button:hover {
-    border-color: #646cff;
+    border-color: var(--color-orange);
+}
+
+button img {
+    width: 20px;
 }
 
 .main-container {
@@ -140,6 +149,10 @@ button:hover {
 .card a:hover {
     box-shadow: 0 8px 28px rgba(99, 102, 241, 0.18);
     transform: scaleY(1.09) scaleX(1.11);
+}
+
+.card a:active {
+    transform: scale(1);
 }
 
 .card a:hover .difficulty-number {
@@ -269,4 +282,13 @@ span {
 footer {
     text-align: center;
     margin: 2rem;
+}
+
+footer a {
+    color: var(--color-link);
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: var(--color-link-hover);
 }
