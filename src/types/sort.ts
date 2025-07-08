@@ -1,0 +1,1 @@
+export type SortMode = 'alpha' | 'date' | 'difficulty';

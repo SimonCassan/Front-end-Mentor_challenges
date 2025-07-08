@@ -1,12 +1,13 @@
 import ChallengeInfos from "./ChallengeInfos";
 import type { Challenge } from "../types/challenge";
 
-type CardsListProps = {
+type ChallengesProps = {
     challenges: Challenge[];
-};
+}
+
 const BASE_URL = 'https://simoncassan.github.io/Front-end-Mentor_challenges';
 
-function CardsList({ challenges }: CardsListProps) {
+function CardsList({ challenges }: ChallengesProps) {
     const challengesList = challenges.map(challenge => (
         <div className="card" key={challenge.url}>
             <a href={BASE_URL + challenge.url} target="_blank">
