@@ -21,18 +21,26 @@ function App() {
     }, []);
 
     const [sortMode, setSortMode] = useState<SortMode>('alpha');
+    const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('asc');
 
 
     let sortedChallenges: Challenge[] = [...challenges];
-    if (sortMode === "alpha")
-        sortedChallenges.sort((a, b) => a.name.localeCompare(b.name));
+    if (sortMode === "alpha") {
+        if (sortOrder === 'asc')
+            sortedChallenges.sort((a, b) => a.name.localeCompare(b.name));
+        else
+            sortedChallenges.sort((a, b) => b.name.localeCompare(a.name));
+    }
     else if (sortMode === 'date')
-        sortedChallenges.sort((a, b) => b.date.localeCompare(a.date));
+        if (sortOrder === 'asc')
+            sortedChallenges.sort((a, b) => b.date.localeCompare(a.date));
+        else
+            sortedChallenges.sort((a, b) => a.date.localeCompare(b.date));
 
     return (
         <>
             <main>
-                <Header challenges={challenges} sortMode={sortMode} setSortMode={setSortMode} />
+                <Header challenges={challenges} sortMode={sortMode} setSortMode={setSortMode} sortOrder={sortOrder} setSortOrder={setSortOrder} />
                 <CardsList challenges={sortedChallenges} />
             </main>
             <Footer />
