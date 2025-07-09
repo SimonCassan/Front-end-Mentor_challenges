@@ -1,17 +1,12 @@
 import { SortMode } from "../types/sort";
 import { ArrowDownAZ, ArrowUpAZ, CalendarArrowDown, CalendarArrowUp, ArrowDownNarrowWide, ArrowUpNarrowWide } from "lucide-react";
 
-const defaultSortOrder: Record<SortMode, 'asc' | 'desc'> = {
-    date: 'desc',      // plus récent d’abord
-    difficulty: 'asc', // le plus facile d’abord
-    alpha: 'asc',      // A → Z d’abord
-};
 const sortConfig = {
     date: {
         asc: { icon: CalendarArrowDown },
         desc: { icon: CalendarArrowUp },
-        ariaAsc: "Sort from most older to most recent",
-        ariaDesc: "Sort from most recent to most older",
+        ariaAsc: "Most older",
+        ariaDesc: "Most recent",
         label: "Date"
     },
     difficulty: {
@@ -37,7 +32,6 @@ type HeaderProps = {
     sortOrder: 'asc' | 'desc';
     setSortOrder: React.Dispatch<React.SetStateAction<'asc' | 'desc'>>;
 }
-
 
 function SortButton({ buttonMode, sortMode, setSortMode, sortOrder, setSortOrder }: HeaderProps) {
     const handleSortClick = (mode: SortMode): void => {

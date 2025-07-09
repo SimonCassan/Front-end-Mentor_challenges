@@ -9,18 +9,6 @@ type HeaderProps = {
 }
 
 function Header({ sortMode, setSortMode, sortOrder, setSortOrder }: HeaderProps) {
-    const handleSortClick = (mode: SortMode): void => {
-        if (mode === sortMode) {
-            sortOrder = sortOrder === 'asc' ? 'desc' : 'asc';
-            setSortOrder(sortOrder);
-        }
-        else {
-            setSortOrder('asc');
-            sortMode = mode;
-            setSortMode(sortMode);
-        }
-    }
-
     return (
         <header>
             <div className="header-block">
