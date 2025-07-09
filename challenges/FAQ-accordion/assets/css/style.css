@@ -1,0 +1,143 @@
+@font-face {
+    font-family: WorkSans;
+    src: url('../fonts/WorkSans-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: WorkSans;
+    src: url('../fonts/WorkSans-SemiBold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: WorkSans;
+    src: url('../fonts/WorkSans-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+:root {
+    --dark-purple: #301534;
+    --pale-purle: #8B6990;
+    --pink: #AD28EB;
+    --light-pink: #F8EEFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: WorkSans, sans-serif;
+    box-sizing: border-box;
+    background-color: var(--light-pink);
+}
+
+.top-background {
+    position: absolute;
+    height: 40vh;
+    width: 100%;
+    background: url('../img/background-pattern-mobile.svg') bottom no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+main {
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    max-width: 600px;
+    background-color: #fff;
+    margin: 0 2rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+h1,
+h2 {
+    color: var(--dark-purple);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.border {
+    width: 100%;
+    height: 1px;
+    background-color: var(--light-pink);
+}
+
+.h2-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.h2-block:hover h2 {
+    color: var(--pink);
+}
+
+main p {
+    display: none;
+    font-size: 0.875rem;
+    line-height: 150%;
+    color: var(--pale-purle);
+}
+
+.expand p {
+    display: initial;
+}
+
+.expand .h2-block {
+    margin-bottom: 1.5rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 0.2rem;
+    left: 0.2rem;
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 600px) {
+    .top-background {
+        background-image: url("../img/background-pattern-desktop.svg");
+    }
+}

@@ -1,0 +1,245 @@
+@font-face {
+    font-family: 'Karla';
+    src: url('../fonts/Karla-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: url('../fonts/Karla-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+:root {
+    --gray-900: #2A4144;
+    --gray: #86A2A5;
+    --green-600: #0C7D69;
+    --green-200: #E0F1E8;
+    --red: #D73C3C;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Karla, sans-serif;
+    line-height: 150%;
+    background-color: var(--green-200);
+}
+
+
+main {
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-form {
+    background-color: #fff;
+    max-width: 736px;
+    margin: 2rem 1rem;
+    flex: 1;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    color: var(--gray-900);
+}
+
+h1 {
+    margin-bottom: 2rem;
+    line-height: 100%;
+    letter-spacing: -1px;
+    font-size: 2rem;
+    color: var(--gray-900);
+}
+
+.form-row {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+span {
+    color: var(--green-600);
+}
+
+input,
+.btn-green,
+input[type="checkbox"]+label,
+.label-radio {
+    cursor: pointer;
+}
+
+input,
+.label-radio,
+textarea {
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    border: 1px solid var(--gray);
+    transition: all 0.3s;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s;
+}
+
+input[type="radio"] {
+    opacity: 0.5;
+}
+
+input:not(input[type="checkbox"], input[type="radio"], .btn-green):hover,
+textarea:hover,
+.label-radio:has(input[type="radio"]:hover),
+input:not(input[type="checkbox"], input[type="radio"], .btn-green):focus {
+    outline: 1px solid var(--green-600);
+}
+
+.active input:not(input[type="checkbox"], input[type="radio"], .btn-green):hover,
+.active textarea:hover,
+.active .label-radio:has(input[type="radio"]:hover),
+.active input:not(input[type="checkbox"], input[type="radio"], .btn-green):focus {
+    outline: 1px solid var(--red);
+}
+
+textarea:focus {
+    outline: none;
+}
+
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
+    accent-color: var(--green-600);
+    opacity: 1;
+}
+
+.label-radio:has(input[type="radio"]:focus),
+.label-radio:has(input[type="radio"]:active),
+.label-radio:has(input[type="radio"]:checked) {
+    background-color: rgb(12, 125, 105, 0.15);
+}
+
+textarea {
+    resize: none;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+fieldset legend {
+    margin-bottom: 1rem;
+}
+
+.label-radio {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.125rem;
+}
+
+.flex-line {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-line label {
+    width: 55%;
+}
+
+.btn-green {
+    background-color: var(--green-600);
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: #fff;
+    padding: 1rem 0;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+.btn-green:hover {
+    background-color: #063e34;
+}
+
+.card {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    background-color: var(--gray-900);
+    border-radius: 1rem;
+    color: #fff;
+    padding: 1.2rem;
+    transition: opacity 0.2s, visibility 0s;
+}
+
+.error-text {
+    display: none;
+    color: var(--red);
+}
+
+.active .error-text {
+    display: block;
+}
+
+.active.card {
+    opacity: 1;
+    visibility: visible;
+}
+
+.active input,
+.active textarea,
+.active .label-radio {
+    border-color: var(--red);
+}
+
+footer {
+    position: absolute;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width:768px) {
+    .card-form {
+        padding: 2.5rem;
+    }
+
+    .form-row.form-name {
+        grid-column: span 1;
+    }
+
+    .form-radio fieldset {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    .form-radio label {
+        grid-column: span 1;
+    }
+}

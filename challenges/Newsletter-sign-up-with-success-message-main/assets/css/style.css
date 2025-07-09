@@ -1,0 +1,271 @@
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+:root {
+    --grey: #949494;
+    --blue800: #242742;
+    --blue700: #36384D;
+    --red100: #FFE7E6;
+    --red: #FF6155;
+    --gradient-start: #FF6A3A;
+    --gradient-end: #FF527B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 150%;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+main {
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label,
+button {
+    font-weight: 700;
+}
+
+h1,
+h2,
+label,
+p,
+li {
+    color: var(--blue800);
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+label {
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    position: relative;
+    padding-left: 35px;
+}
+
+ul li::before {
+    content: url('../img/icon-list.svg');
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.card {
+    opacity: 0;
+    visibility: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 2.5rem;
+    max-width: 960px;
+    min-height: 100dvh;
+    padding-bottom: 2rem;
+    background-color: #fff;
+}
+
+.image {
+    background-image: url("../img/illustration-sign-up-mobile.svg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 285px;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.card-content {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.card-content ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.error {
+    color: var(--red);
+}
+
+.invalid {
+    background-color: var(--red100);
+    border-color: var(--red);
+}
+
+.invalid:focus {
+    border-color: var(--red);
+    outline: var(--red);
+}
+
+.item {
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+}
+
+input {
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--grey);
+}
+
+button {
+    position: relative;
+    font-family: Roboto, sans-serif;
+    border: none;
+    background-color: var(--blue800);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button .item-text {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+
+button::after {
+    content: "";
+    position: absolute;
+    border-radius: 8px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(var(--gradient-start), var(--gradient-end));
+    opacity: 0;
+    transition: opacity 0.5s;
+    z-index: 0;
+}
+
+button:hover::after {
+    opacity: 1;
+}
+
+.button-invalid {
+    background-color: #949494;
+    cursor: not-allowed;
+}
+
+.button-invalid:hover::after {
+    opacity: 0;
+}
+
+.success-message {
+    opacity: 0;
+    visibility: hidden;
+    min-height: 70dvh;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    background-color: #fff;
+    position: absolute;
+}
+
+.success-message-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.success-message-content img {
+    width: 64px;
+}
+
+.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media screen and (min-width:580px) {
+    body {
+        background-color: var(--blue800);
+    }
+
+    main {
+        margin: 2rem;
+    }
+
+    .card {
+        padding: 2.5rem;
+        border-radius: 2rem;
+        min-height: initial;
+    }
+
+    .image {
+        border-radius: 1rem;
+        height: 360px;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    .success-message {
+        padding: 4rem;
+        border-radius: 2rem;
+        gap: 2rem;
+        justify-content: initial;
+        min-height: initial;
+    }
+}
+
+@media screen and (min-width:950px) {
+    .card {
+        flex-direction: row-reverse;
+        gap: 4rem;
+        height: 600px;
+    }
+
+    .image {
+        height: 100%;
+        background-image: url("../img/illustration-sign-up-desktop.svg");
+        max-width: 400px;
+    }
+}

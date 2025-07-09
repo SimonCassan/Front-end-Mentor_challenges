@@ -1,0 +1,136 @@
+[
+    {
+        "name": "Article preview component",
+        "url": "/Article-preview-component/",
+        "date": "2025-04-20",
+        "categories": [
+            "html",
+            "css",
+            "js"
+        ],
+        "difficulty": 1
+    },
+    {
+        "name": "Blog preview card",
+        "url": "/Blog-preview-card/",
+        "date": "2025-02-13",
+        "categories": [
+            "html",
+            "css"
+        ],
+        "difficulty": 1
+    },
+    {
+        "name": "Contact form",
+        "url": "/Contact-form/",
+        "date": "2025-04-10",
+        "categories": [
+            "html",
+            "css",
+            "js"
+        ],
+        "difficulty": 2
+    },
+    {
+        "name": "FAQ accordion",
+        "url": "/FAQ-accordion/",
+        "date": "2025-03-22",
+        "categories": [
+            "html",
+            "css",
+            "js"
+        ],
+        "difficulty": 1
+    },
+    {
+        "name": "Four card feature section",
+        "url": "/Four-card-feature-section/",
+        "date": "2025-04-04",
+        "categories": [
+            "html",
+            "css"
+        ],
+        "difficulty": 1
+    },
+    {
+        "name": "Meet landing page",
+        "url": "/Meet-landing-page/",
+        "date": "2025-04-11",
+        "categories": [
+            "html",
+            "css"
+        ],
+        "difficulty": 1
+    },
+    {
+        "name": "Newsletter",
+        "url": "/Newsletter-sign-up-with-success-message-main/",
+        "date": "2025-04-29",
+        "categories": [
+            "html",
+            "css",
+            "js"
+        ],
+        "difficulty": 2
+    },
+    {
+        "name": "Product preview card",
+        "url": "/Product-preview-card/",
+        "date": "2025-03-10",
+        "categories": [
+            "html",
+            "css"
+        ],
+        "difficulty": 1
+    },
+    {
+        "name": "QRCode",
+        "url": "/QRcode/",
+        "date": "2025-02-03",
+        "categories": [
+            "html",
+            "css"
+        ],
+        "difficulty": 1
+    },
+    {
+        "name": "Recipe page",
+        "url": "/Recipe-page/",
+        "date": "2025-03-02",
+        "categories": [
+            "html",
+            "css"
+        ],
+        "difficulty": 1
+    },
+    {
+        "name": "Social links profile",
+        "url": "/Social-links-profile/",
+        "date": "2025-02-22",
+        "categories": [
+            "html",
+            "css"
+        ],
+        "difficulty": 1
+    },
+    {
+        "name": "Testimonials",
+        "url": "/Testimonials/",
+        "date": "2025-05-03",
+        "categories": [
+            "html",
+            "css"
+        ],
+        "difficulty": 2
+    },
+    {
+        "name": "Workit landing page",
+        "url": "/Workit-landing-page/",
+        "date": "2025-03-16",
+        "categories": [
+            "html",
+            "css"
+        ],
+        "difficulty": 1
+    }
+]
