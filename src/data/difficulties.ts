@@ -6,5 +6,5 @@ export const difficultyMap: Record<DifficultyKey, DifficultyValues> = {
     3: { label: 'Intermediate', class: 'difficulty-medium' },
     4: { label: 'Advanced', class: 'difficulty-hard' },
     5: { label: 'Guru', class: 'difficulty-expert' },
-    default: { label: 'Void', class: 'difficulty-unknown' }
+    99: { label: 'Void', class: 'difficulty-unknown' }
 };

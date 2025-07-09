@@ -3,4 +3,4 @@ export interface DifficultyValues {
     class: string;
 }
 
-export type DifficultyKey = 1 | 2 | 3 | 4 | 5 | "default";
+export type DifficultyKey = 1 | 2 | 3 | 4 | 5 | 99;

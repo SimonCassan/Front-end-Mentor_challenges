@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
+import { Challenge } from "./types/challenge";
+import { SortMode } from "./types/sort";
 import CardsList from "./components/CardsList";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import { Challenge } from "./types/challenge";
-import { SortMode } from "./types/sort";
 
 async function fetchChallenges(): Promise<Challenge[]> {
     const res = await fetch('/src/data/challenges.json');
@@ -25,22 +25,18 @@ function App() {
 
 
     let sortedChallenges: Challenge[] = [...challenges];
-    if (sortMode === "alpha") {
-        if (sortOrder === 'asc')
-            sortedChallenges.sort((a, b) => a.name.localeCompare(b.name));
-        else
-            sortedChallenges.sort((a, b) => b.name.localeCompare(a.name));
-    }
+
+    if (sortMode === "alpha")
+        sortedChallenges.sort((a, b) => sortOrder === 'asc' ? a.name.localeCompare(b.name) : b.name.localeCompare(a.name));
     else if (sortMode === 'date')
-        if (sortOrder === 'asc')
-            sortedChallenges.sort((a, b) => b.date.localeCompare(a.date));
-        else
-            sortedChallenges.sort((a, b) => a.date.localeCompare(b.date));
+        sortedChallenges.sort((a, b) => sortOrder === 'asc' ? new Date(a.date).getTime() - new Date(b.date).getTime() : new Date(b.date).getTime() - new Date(a.date).getTime());
+    else
+        sortedChallenges.sort((a, b) => sortOrder === 'asc' ? a.difficulty - b.difficulty : b.difficulty - a.difficulty);
 
     return (
         <>
             <main>
-                <Header challenges={challenges} sortMode={sortMode} setSortMode={setSortMode} sortOrder={sortOrder} setSortOrder={setSortOrder} />
+                <Header sortMode={sortMode} setSortMode={setSortMode} sortOrder={sortOrder} setSortOrder={setSortOrder} />
                 <CardsList challenges={sortedChallenges} />
             </main>
             <Footer />
