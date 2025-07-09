@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 
 async function fetchChallenges(): Promise<Challenge[]> {
-    const res = await fetch('/src/data/challenges.json');
+    const res = await fetch('/public/data/challenges.json');
     return res.json();
 }
 
