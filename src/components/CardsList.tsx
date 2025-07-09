@@ -17,7 +17,7 @@ function CardsList({ challenges }: ChallengesProps) {
         const msnry = new Masonry(gridRef.current, {
             itemSelector: ".card",
             columnWidth: ".card",
-            percentPosition: true,
+            fitWidth: true,
             gutter: 16,
         });
         // Nettoyage à la destruction du composant
