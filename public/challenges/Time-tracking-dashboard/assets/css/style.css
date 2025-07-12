@@ -21,6 +21,8 @@
     --green400: #4BCF82;
     --yellow300: #F1C75B;
     --grey200: #D8D8D8;
+
+    --border-radius: 1rem;
 }
 
 
@@ -43,7 +45,31 @@ main {
     align-items: center;
 }
 
+h1 {
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--purple500);
+    font-size: 1.1rem;
+    line-height: 21px;
+    transition: color 0.3s;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: var(--white);
+}
+
 .container {
+    max-width: 1250px;
+    width: 100%;
     height: 80%;
     margin: 4rem 2rem;
     display: flex;
@@ -52,20 +78,24 @@ main {
 }
 
 .profile-card {
+    height: 200px;
+    position: relative;
     padding: 2rem;
-    background-color: var(--purple600);
-}
-
-.profile-container {
+    background-color: var(--navy900);
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: flex-end;
 }
 
 .profile-picture {
     width: 64px;
     border-radius: 50%;
     border: 3px solid var(--white);
+}
+
+.profile-links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 span {
@@ -76,27 +106,45 @@ span {
     font-weight: 400;
 }
 
-h1 {
-    font-weight: 300;
+.card,
+.card-border,
+.profile-card,
+.profile-container {
+    border-radius: var(--border-radius);
 }
 
 .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     background-color: var(--navy900);
     margin-top: 2.5rem;
     padding: 1.5rem;
-    height: 160px;
-    border-radius: 1rem;
+    height: 96px;
+}
+
+.profile-container,
+.card-border {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    right: 0;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    top: 0;
+    height: 8rem;
+    background-color: var(--purple700);
 }
 
 .card-border {
-    position: absolute;
-    height: 3rem;
-    width: 100%;
-    overflow: hidden;
-    top: -30px;
-    right: 0;
-    border-radius: 1rem 1rem 0 0;
+    height: 4rem;
+    top: -38px;
     z-index: -1;
 }
 
@@ -107,26 +155,57 @@ h1 {
     z-index: 1;
 }
 
-.card1 .card-border {
+.work .card-border {
     background-color: var(--orange300);
 }
 
-.card2 .card-border {
+.play .card-border {
     background-color: var(--blue300);
 }
 
-.card3 .card-border {
+.study .card-border {
     background-color: var(--pink400);
 }
 
-.card4 .card-border {
+.exercise .card-border {
     background-color: var(--green400);
 }
 
-.card5 .card-border {
+.social .card-border {
     background-color: var(--purple600);
 }
 
-.card6 .card-border {
+.self-care .card-border {
     background-color: var(--yellow300);
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.card-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-time {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.card-time p:first-of-type {
+    line-height: 2.25rem;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.card-time p:last-of-type {
+    font-size: 0.9rem;
+    line-height: 18px;
+    color: var(--navy200);
 }
