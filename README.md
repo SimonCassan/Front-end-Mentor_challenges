@@ -9,7 +9,7 @@ A showcase page featuring all my Frontend Mentor challenge solutions, presented 
 
 ## 🌐 Live site
 
-[https://simoncassan.github.io/Front-end-Mentor_challenges/challenges/](https://simoncassan.github.io/Front-end-Mentor_challenges/)
+[https://simoncassan.github.io/Front-end-Mentor_challenges/](https://simoncassan.github.io/Front-end-Mentor_challenges/)
 
 ## Features
 
