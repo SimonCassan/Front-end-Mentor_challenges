@@ -53,17 +53,30 @@ h2 {
     font-size: 1.2rem;
 }
 
-a {
-    text-decoration: none;
+.profile-links button {
     color: var(--purple500);
     font-size: 1.1rem;
     line-height: 21px;
     transition: color 0.3s;
 }
 
-a:hover,
-a:focus,
-a:active {
+.profile-links button:hover,
+.profile-links button:focus,
+.profile-links button:active {
+    color: var(--white);
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+.icon-dots {
+    color: var(--navy200);
+    transition: color 0.3s;
+}
+
+button:hover .icon-dots {
     color: var(--white);
 }
 
@@ -96,6 +109,10 @@ a:active {
     width: 100%;
     display: flex;
     justify-content: space-between;
+}
+
+.profile-links button.pressed {
+    color: var(--white);
 }
 
 span {
@@ -139,7 +156,7 @@ span {
     padding: 2rem;
     top: 0;
     height: 8rem;
-    background-color: var(--purple700);
+    background-color: var(--purple600);
 }
 
 .card-border {
@@ -198,14 +215,102 @@ span {
     justify-content: space-between;
 }
 
-.card-time p:first-of-type {
-    line-height: 2.25rem;
-    font-size: 2rem;
-    font-weight: 300;
+.stats-time {
+    width: 100%;
+    align-items: baseline;
+    justify-content: space-between;
+    display: none;
 }
 
-.card-time p:last-of-type {
+.stats-time p:first-of-type {
+    line-height: 2.25rem;
+    font-size: 1.25rem;
+    font-weight: 300;
+
+    @media screen and (min-width:400px) {
+        font-size: 2rem;
+    }
+}
+
+.stats-time p:last-of-type {
     font-size: 0.9rem;
     line-height: 18px;
     color: var(--navy200);
+}
+
+.active {
+    display: flex;
+}
+
+@media screen and (min-width:650px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 950px;
+    }
+
+    .profile-links {
+        justify-content: space-around;
+    }
+
+    .profile-links button {
+        padding: 0 1rem;
+    }
+
+    .profile-card {
+        grid-column: 1 / -1;
+    }
+
+    .card {
+        height: 213px;
+    }
+
+    .card-content {
+        gap: 2rem;
+    }
+
+    .stats-time {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .stats-time p:first-of-type {
+        font-size: 3.5rem;
+        line-height: 4.125rem;
+    }
+
+}
+
+@media screen and (min-width:1440px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .profile-container {
+        flex-direction: column;
+        align-items: flex-start;
+        height: 65%;
+    }
+
+    .profile-card {
+        grid-column: span 1;
+        grid-row: span 2;
+        height: 100%;
+    }
+
+    .profile-picture {
+        width: 78px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .profile-links {
+        flex-direction: column;
+        gap: 1.3rem;
+    }
 }
