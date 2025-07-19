@@ -26,7 +26,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-landing-page-with-flexbox-1Dqxt5Suhf)
-- Live Site URL: [Github-pages](https://simoncassan.github.io/Front-end-Mentor_challenges/Meet-landing-page/)
+- Live Site URL: [Github-pages](https://simoncassan.github.io/Front-end-Mentor_challenges/challenges/Meet-landing-page/)
 
 ## Author
 

@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/article-preview-component-GKSCPz2nHc)
-- Live Site URL: [GitHub Pages](https://simoncassan.github.io/Front-end-Mentor_challenges/Article-preview-component/)
+- Live Site URL: [GitHub Pages](https://simoncassan.github.io/Front-end-Mentor_challenges/challenges/Article-preview-component/)
 
 ## My process
 
