@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'SpaceMono';
+    src: url('/font/SpaceMono-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+}
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --grey600: #3D6666;
+    --grey550: #547878;
+    --grey500: #5E7A7D;
+    --grey400: #7F9D9F;
+    --grey300: #9EBBBD;
+    --grey200: #C5E4E7;
+    --grey50: #F3F9FA;
+    --green900: #00474B;
+    --green800: #085C61;
+    --green750: #0D686D;
+    --green400: #26C2AE;
+    --green200: #9FE8DF;
+    --orange400: #E17052;
+}
+
+
+body {
+    font-family: 'SpaceMono', sans-serif;
+    font-weight: 700;
+}
