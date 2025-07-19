@@ -1,5 +1,5 @@
 async function getData() {
-    const res = await fetch('../../data.json');
+    const res = await fetch('/Front-end-Mentor_challenges/challenges/Time-tracking-dashboard/data.json');
     const data = await res.json();
     return data;
 }
