@@ -27,7 +27,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/blog-preview-card-using-flexbox-XvQ79vzTFh)
-- Live Site URL: [GitHub Pages](https://simoncassan.github.io/Front-end-Mentor_challenges/Blog-preview-card/)
+- Live Site URL: [GitHub Pages](https://simoncassan.github.io/Front-end-Mentor_challenges/challenges/Blog-preview-card/)
 
 ## Author
 

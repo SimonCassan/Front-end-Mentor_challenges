@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/)
-- Live Site URL: [GitHub Pages](https://simoncassan.github.io/Front-end-Mentor_challenges/)
+- Live Site URL: [GitHub Pages](https://simoncassan.github.io/Front-end-Mentor_challenges/challenges/)
 
 ## My process
 
